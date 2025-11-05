@@ -1,0 +1,133 @@
+{
+  "projects": [
+    {
+      "name": "Global Advice",
+      "images": [
+        "projectsScreens/GlobalAdvice/Screenshot_20251027-102303.jpg",
+        "projectsScreens/GlobalAdvice/Screenshot_20251027-102306.jpg",
+        "projectsScreens/GlobalAdvice/Screenshot_20251027-102311.jpg",
+        "projectsScreens/GlobalAdvice/Screenshot_20251027-102314.jpg",
+        "projectsScreens/GlobalAdvice/Screenshot_20251027-102348.jpg",
+        "projectsScreens/GlobalAdvice/Screenshot_20251027-102439.jpg"
+      ]
+    },
+    {
+      "name": "Islamic Yard",
+      "images": [
+        "projectsScreens/IslamicYard/Screenshot_20251027-100059.jpg",
+        "projectsScreens/IslamicYard/Screenshot_20251027-100106.jpg",
+        "projectsScreens/IslamicYard/Screenshot_20251027-100110.jpg",
+        "projectsScreens/IslamicYard/Screenshot_20251027-100126.jpg",
+        "projectsScreens/IslamicYard/Screenshot_20251027-100134.jpg",
+        "projectsScreens/IslamicYard/Screenshot_20251027-100143.jpg",
+        "projectsScreens/IslamicYard/Screenshot_20251027-100149.jpg",
+        "projectsScreens/IslamicYard/Screenshot_20251027-100233.jpg"
+      ]
+    },
+    {
+      "name": "Istakbal",
+      "images": [
+        "projectsScreens/Istakbal/Screenshot_20251027-102652.jpg",
+        "projectsScreens/Istakbal/Screenshot_20251027-102700.jpg",
+        "projectsScreens/Istakbal/Screenshot_20251027-102716.jpg",
+        "projectsScreens/Istakbal/Screenshot_20251027-102722.jpg",
+        "projectsScreens/Istakbal/Screenshot_20251027-102740.jpg",
+        "projectsScreens/Istakbal/Screenshot_20251027-102749.jpg",
+        "projectsScreens/Istakbal/Screenshot_20251027-102800.jpg",
+        "projectsScreens/Istakbal/Screenshot_20251027-102805.jpg",
+        "projectsScreens/Istakbal/Screenshot_20251027-102810.jpg",
+        "projectsScreens/Istakbal/Screenshot_20251027-102820.jpg"
+      ]
+    },
+    {
+      "name": "Learnu",
+      "images": [
+        "projectsScreens/Learnu/Screenshot_20251027-095834.jpg",
+        "projectsScreens/Learnu/Screenshot_20251027-095837.jpg",
+        "projectsScreens/Learnu/Screenshot_20251027-095840.jpg",
+        "projectsScreens/Learnu/Screenshot_20251027-095844.jpg",
+        "projectsScreens/Learnu/Screenshot_20251027-095856.jpg",
+        "projectsScreens/Learnu/Screenshot_20251027-095910.jpg",
+        "projectsScreens/Learnu/Screenshot_20251027-095922.jpg",
+        "projectsScreens/Learnu/Screenshot_20251027-100017.jpg",
+        "projectsScreens/Learnu/Screenshot_20251027-100025.jpg"
+      ]
+    },
+    {
+      "name": "Multirun Alforsan",
+      "images": [
+        "projectsScreens/MultirunAlforsan/Screenshot_20250805-204629.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250805-204632.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250805-204635.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250805-212838.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250805-212908.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250805-212915.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250805-212919.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250806-233747.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250806-233754.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250808-001959.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250808-002007.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250808-002013.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250808-002020.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250808-002033.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250808-002056.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-114608.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-114612.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-144902.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-144926.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-144959.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-145022.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-145619.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-145625.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-163659.jpg",
+        "projectsScreens/MultirunAlforsan/Screenshot_20250816-163716.jpg"
+      ]
+    },
+    {
+      "name": "Qannuni",
+      "images": [
+        "projectsScreens/Qannuni/Screenshot_20251027-104252.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104318.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104323.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104351.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104402.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104409.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104439.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104450.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104453.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104504.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104521.jpg",
+        "projectsScreens/Qannuni/Screenshot_20251027-104556.jpg"
+      ]
+    },
+    {
+      "name": "Temry",
+      "images": [
+        "projectsScreens/Temry/Screenshot_20251027-101811.jpg",
+        "projectsScreens/Temry/Screenshot_20251027-101835.jpg",
+        "projectsScreens/Temry/Screenshot_20251027-101855.jpg",
+        "projectsScreens/Temry/Screenshot_20251027-101902.jpg",
+        "projectsScreens/Temry/Screenshot_20251027-101907.jpg",
+        "projectsScreens/Temry/Screenshot_20251027-101945.jpg",
+        "projectsScreens/Temry/Screenshot_20251027-102030.jpg",
+        "projectsScreens/Temry/Screenshot_20251027-102052.jpg",
+        "projectsScreens/Temry/Screenshot_20251027-102123.jpg",
+        "projectsScreens/Temry/Screenshot_20251027-102130.jpg"
+      ]
+    },
+    {
+      "name": "The Lamb",
+      "images": [
+        "projectsScreens/TheLamb/Screenshot_20251027-101209.jpg",
+        "projectsScreens/TheLamb/Screenshot_20251027-101217.jpg",
+        "projectsScreens/TheLamb/Screenshot_20251027-101241.jpg",
+        "projectsScreens/TheLamb/Screenshot_20251027-101315.jpg",
+        "projectsScreens/TheLamb/Screenshot_20251027-101330.jpg",
+        "projectsScreens/TheLamb/Screenshot_20251027-101343.jpg",
+        "projectsScreens/TheLamb/Screenshot_20251027-101357.jpg",
+        "projectsScreens/TheLamb/Screenshot_20251027-101406.jpg",
+        "projectsScreens/TheLamb/Screenshot_20251027-101411.jpg"
+      ]
+    }
+  ]
+}

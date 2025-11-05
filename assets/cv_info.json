@@ -1,0 +1,16 @@
+{
+  "name": "Yossef Mohamed",
+  "title": "Flutter Developer",
+  "email": "yossefmahmod10@gmail.com",
+  "'pic'": "assets/developer_pic.png",
+  "social_links": {
+    "linkedin": "https://www.linkedin.com/in/youssef-mahmoud-56bab3251/",
+    "facebook": "https://www.facebook.com/joe.1911.zamalek",
+    "instagram": "https://www.instagram.com/yossefmahmod20/",
+    "github": "https://github.com/yossefJoe"
+
+  },
+  "cv_path": "assets/Youssef-Mahmoud-CV.pdf",
+  "phone_number": "+201125826623",
+  "whatsapp_number": "+201125826623"
+}
