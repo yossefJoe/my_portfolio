@@ -10,7 +10,7 @@ class ProjectsCarusol extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (images.isEmpty) {
-      return const SizedBox.shrink(); // ✅ أفضل من Text
+      return const SizedBox.shrink();
     }
 
     return LayoutBuilder(
@@ -35,10 +35,12 @@ class ProjectsCarusol extends StatelessWidget {
               viewportFraction: 0.2,
             ),
             itemBuilder: (context, imgIndex, realIdx) {
-              final imagePath =
-                  images[imgIndex].toString().startsWith('assets/')
-                      ? images[imgIndex].toString().replaceFirst('assets/', '')
-                      : images[imgIndex].toString();
+              String imagePath = images[imgIndex].toString();
+
+              // ✅ للويب: إزالة "assets/" من البداية
+              if (kIsWeb && imagePath.startsWith('assets/')) {
+                imagePath = imagePath.substring(7); // إزالة "assets/"
+              }
 
               return GestureDetector(
                 onTap: () {
@@ -64,45 +66,80 @@ class ProjectsCarusol extends StatelessWidget {
     );
   }
 
-  /// ✅ الحل الأساسي: استخدام Image.network للويب
   Widget _buildImage(String imagePath) {
     if (kIsWeb) {
-      // للويب: استخدم المسار المطلق
+      // ✅ للويب: Image.network من مجلد assets مباشرة
       return Image.network(
-        'assets/$imagePath', // ⚠️ هنا المسار لازم يبدأ بـ assets/
+        'assets/$imagePath',
         fit: BoxFit.cover,
         width: 200,
         height: 200,
         errorBuilder: (context, error, stackTrace) {
+          debugPrint('❌ Failed to load: assets/$imagePath');
           return Container(
-            color: Colors.grey[300],
-            child: const Icon(Icons.broken_image, size: 50),
+            width: 200,
+            height: 200,
+            decoration: BoxDecoration(
+              color: Colors.grey[850],
+              border: Border.all(color: Colors.red.withOpacity(0.3)),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.broken_image, size: 40, color: Colors.red[300]),
+                SizedBox(height: 8),
+                Text(
+                  'Image Error',
+                  style: TextStyle(color: Colors.red[300], fontSize: 10),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Text(
+                    imagePath.split('/').last,
+                    style: TextStyle(color: Colors.white54, fontSize: 8),
+                    textAlign: TextAlign.center,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ),
           );
         },
         loadingBuilder: (context, child, loadingProgress) {
           if (loadingProgress == null) return child;
-          return Center(
-            child: CircularProgressIndicator(
-              value:
-                  loadingProgress.expectedTotalBytes != null
-                      ? loadingProgress.cumulativeBytesLoaded /
-                          loadingProgress.expectedTotalBytes!
-                      : null,
+          return Container(
+            width: 200,
+            height: 200,
+            color: Colors.grey[850],
+            child: Center(
+              child: CircularProgressIndicator(
+                value:
+                    loadingProgress.expectedTotalBytes != null
+                        ? loadingProgress.cumulativeBytesLoaded /
+                            loadingProgress.expectedTotalBytes!
+                        : null,
+                strokeWidth: 2,
+                color: Colors.white54,
+              ),
             ),
           );
         },
       );
     } else {
-      // للموبايل: Image.asset عادي
+      // ✅ للموبايل: Image.asset عادي
       return Image.asset(
-        imagePath,
+        'assets/$imagePath',
         fit: BoxFit.cover,
         width: 200,
         height: 200,
         errorBuilder: (context, error, stackTrace) {
           return Container(
-            color: Colors.grey[300],
-            child: const Icon(Icons.broken_image, size: 50),
+            width: 200,
+            height: 200,
+            color: Colors.grey[800],
+            child: Icon(Icons.broken_image, size: 40, color: Colors.white54),
           );
         },
       );

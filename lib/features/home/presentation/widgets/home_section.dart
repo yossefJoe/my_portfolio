@@ -5,6 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../../core/utils/responsive.dart';
 import 'download_button.dart';
 import 'hire_me_button.dart';
+import 'profile_pic.dart';
 import 'social_media.dart';
 
 class HomeSection extends StatefulWidget {
@@ -91,12 +92,7 @@ class _HomeSectionState extends State<HomeSection> {
           child: _buildIntroSection(context, name, title, social, cv),
         ),
         const SizedBox(width: 40),
-        CircleAvatar(
-          radius: 250.r,
-          backgroundColor: Colors.grey[800],
-          backgroundImage: AssetImage(image),
-          // foregroundImage: AssetImage(image, ),
-        ),
+        ProfileAvatarSection(image: image),
       ],
     );
   }
@@ -112,11 +108,8 @@ class _HomeSectionState extends State<HomeSection> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        CircleAvatar(
-          radius: 100,
-          backgroundColor: Colors.grey[800],
-          backgroundImage: AssetImage(image),
-        ),
+        ProfileAvatarSection(image: image),
+
         const SizedBox(height: 30),
         _buildIntroSection(context, name, title, social, cv),
       ],

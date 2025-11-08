@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../core/utils/responsive.dart';
 
 class ProfileAvatarSection extends StatelessWidget {
   final String image;
@@ -7,31 +10,34 @@ class ProfileAvatarSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      clipBehavior: Clip.none, // عشان الصورة تطلع برا الستاك
-      alignment: Alignment.topCenter,
-      children: [
-        // الكارت أو الخلفية
-        Container(
-          width: 200,
-          height: 200,
-          margin: const EdgeInsets.only(top: 100), // يسيب مساحة فوق للصورة
-          decoration: BoxDecoration(
-            color: const Color(0xFF1A1A1A),
-            shape: BoxShape.circle,
-          ),
-        ),
+    // تحديد الحجم حسب نوع الجهاز
+    final double size =
+        Responsive.isDesktop(context)
+            ? 450.w
+            : Responsive.isTablet(context)
+            ? 450.w
+            : 600.w; // أصغر للأجهزة الصغيرة
 
-        // الصورة الطالعة لفوق
-        Positioned(
-          top: -60, // المسافة اللي الصورة طالعة بيها لفوق
-          child: CircleAvatar(
-            radius: 80,
-            backgroundColor: Colors.grey[800],
-            backgroundImage: AssetImage(image),
-          ),
+    return Container(
+      width: size,
+      height: size, // خلي العرض والارتفاع متساويين عشان تبقى دائرية
+
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.1),
+        shape: BoxShape.circle,
+        image: DecorationImage(
+          image: AssetImage(image),
+          fit: BoxFit.contain, // يغطي كل الدائرة بدون تشويه
+          filterQuality: FilterQuality.high,
         ),
-      ],
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black26,
+            blurRadius: 20,
+            offset: Offset(0, 10),
+          ),
+        ],
+      ),
     );
   }
 }
